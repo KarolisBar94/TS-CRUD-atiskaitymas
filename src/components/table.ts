@@ -112,7 +112,14 @@ class Table<Type extends RowData> {
     deleteButton.style.width = '80px';
     deleteButton.addEventListener('click', () => onDelete(id));
 
-    buttonCell.append(deleteButton);
+    const updateButton = document.createElement('button');
+    updateButton.type = 'button';
+    updateButton.innerHTML = '✖️';
+    updateButton.className = 'btn btn-warning';
+    updateButton.style.width = '50px';
+    updateButton.addEventListener('click', () => onDelete(id));
+
+    buttonCell.append(updateButton, deleteButton);
     tr.append(buttonCell);
   };
 
