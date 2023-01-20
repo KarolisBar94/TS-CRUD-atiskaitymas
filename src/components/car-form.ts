@@ -58,7 +58,7 @@ class CarForm {
       }),
       price: new TextField({
         name: 'price',
-        labelText: 'Price',
+        labelText: 'Price $',
       }),
       year: new TextField({
         name: 'year',
