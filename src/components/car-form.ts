@@ -77,7 +77,7 @@ class CarForm {
     this.htmlFieldsContainer.className = '  d-flex flex-column gap-2';
     this.htmlFieldsContainer.append(...fieldsArr.map((field) => field.htmlElement));
 
-    this.htmlSubmitBtn.className = 'btn btn-primary';
+    this.htmlSubmitBtn.className = 'btn btn-success';
 
     this.htmlElement.className = 'bg-info card d-flex flex-column gap-3 p-3';
     this.htmlElement.append(
