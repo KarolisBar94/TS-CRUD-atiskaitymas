@@ -114,10 +114,10 @@ class Table<Type extends RowData> {
 
     const updateButton = document.createElement('button');
     updateButton.type = 'button';
-    updateButton.innerHTML = '✖️';
+    updateButton.innerHTML = '↻';
     updateButton.className = 'btn btn-warning';
     updateButton.style.width = '50px';
-    updateButton.addEventListener('click', () => onDelete(id));
+    updateButton.addEventListener('click', () => (id));
 
     buttonCell.append(updateButton, deleteButton);
     tr.append(buttonCell);
